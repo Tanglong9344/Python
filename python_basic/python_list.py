@@ -1,4 +1,5 @@
-#python 是弱类型语言
+#python 是强类型语言
+#python是动态类型脚本语言
 #list
 #形式1
 print ("形式1：")
