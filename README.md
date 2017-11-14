@@ -3,3 +3,6 @@
 ##### version Python 3.5.3
 ### abstract
 + [Python basic](https://github.com/Tanglong9344/Python/tree/master/python_basic)
+---
+### 参考资料
++ [Zen of Python](https://www.python.org/dev/peps/pep-0020/)
