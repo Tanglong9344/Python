@@ -1,16 +1,16 @@
-#break && continue 的使用
+#break && continue
 #break
 while True:
-    x = input("输入字符串q:退出)：")
+    x = input("Input strings and 'q'for quit: ")
     print (x)
     if x == 'q':
-        break    #彻底跳出循环
+        break    # run out of loop
 
 #continue
 while True:
-    x = int(input("输入整数(110:退出)："))
+    x = int(input("input numbers and 110 for quit: "))
     if x < 60:
-        continue # 跳出本次循环
+        continue # continue the next loop
     print (x)
     if x == 110:
-        break    #彻底跳出循环
+        break    # run out of loop

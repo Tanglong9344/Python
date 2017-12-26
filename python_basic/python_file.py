@@ -1,38 +1,37 @@
-#文件操作1
-print ("文件操作1:")
-fp = open("test.txt") #默认只读方式打开
+# file1
+print ("file-1:")
+fp = open("test.txt") #open in read-only mode
 data = fp.read()
 print (data)
 fp.close()
 
-#文件操作2
-print ("文件操作2:")
+#file-2
+print ("file-2:")
 fp = open("test.txt")
-data = fp.readline()
+data = fp.readline() # read only one line
 print (data)
 fp.close()
 
-#文件操作3
-print ("文件操作3:")
-fp = open("test.txt","r")
-data = fp.readlines()
+#file-3
+print ("file-3:")
+fp = open("test.txt", "r")
+data = fp.readlines() # read all lines
 print (data)
 fp.close()
 
-#文件操作4-1
-print ("文件操作4-1:")
-fp = open("test.txt","a")  # a(appendind)不删除原始数据，直接在其后添加数据
-fp.write("I am appending!\n")
+#file-4-1
+print ("file-4-1:")
+fp = open("test.txt","a")  # a(appendind)append data after old data
+fp.write("I am appending!")
 fp.close()
 fp = open("test.txt")
 print (fp.read())
 fp.close()
 
-#文件操作4-2之写入
-print ("文件操作4-2之写入:")
-fp = open("test.txt","w") # w(writting)删除原始数据重新写入数据
-#写入数据
-fp.write("I am writting!\n")
+#file-4-2
+print ("file-4-2:")
+fp = open("test.txt","w") # w(writting)writing over old data
+fp.write("I am Tanglong.\nI am coding...")
 fp.close()
 fp = open("test.txt")
 print (fp.read())

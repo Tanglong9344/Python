@@ -1,30 +1,30 @@
-#定义一个无参数函数
+# A function without parameters
 def hello():
     print("Hello!")
 
-#调用函数
+# Call the function
 hello()
 
-#定义一个带一参数函数
+# A function with a parameter
 def mysum(n):
     s=0
     for i in range (1,n):
-        s+=i;
-    return s;
+        s += i
+    return s
 
-#调用函数
+# Call the Function
 print (mysum(11))
 
-#定义一个带两参数函数
+# A function with two parameters
 def myadd(a,b):
-    print(a+b)
+    return a + b
 
-#调用函数
-myadd(1,3)
+# Call the Function
+print(myadd(1,3))
 
-#为函数指定默认值
+# A function with default value
 def hello (name = 'World!'):
-    print ("Hello " + name)  #当函数未传递参数时使用默认值
+    print ("Hello " + name)
 
 hello()
 hello("Python!")

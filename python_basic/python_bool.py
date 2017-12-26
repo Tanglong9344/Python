@@ -1,28 +1,25 @@
 # and && or
-#示例1
-print ("示例1：")
+
+print ("--1：")
 a = "AA"
 b = "BB"
-print (True and a or b) #选a
-print ((False and a) or b)#选b
+print (True and a or b) # a selected
+print ((False and a) or b)# b selected
 
-#示例2
-print ("示例2：")
+print ("--2：")
 a = ""
 b = "BB"
-print ((True and a) or b) #选b
-print ((False and a) or b)#选b
+print ((True and a) or b) # b selected
+print ((False and a) or b)# b selected
 
-#示例3
-print ("示例3：")
+print ("--3：")
 a = "AA"
 b = "BB"
-print (True and [a] or [b]) #选a
-print (False and [a] or [b])#选b
+print (True and [a] or [b]) # a selected
+print (False and [a] or [b])# b selected
 
-#示例4
-print ("示例4：")
+print ("--4：")
 a = ""
 b = "BB"
-print (True and [a] or [b]) #选a
-print (False and [a] or [b])#选b
+print (True and [a] or [b]) # a selected
+print (False and [a] or [b])# b selected

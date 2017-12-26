@@ -1,2 +1,2 @@
 import sys
-print(sys.getdefaultencoding())#默认编码
+print(sys.getdefaultencoding())# default encoding

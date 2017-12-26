@@ -1,4 +1,4 @@
-#原文件数据
+#old data
 '''
 #-- scores.txt
 刘备 23 35 44 47 66
@@ -7,8 +7,8 @@
 诸葛亮 100
 曹操 
 '''
-#文件数据处理
-fpin = open("scores.txt",encoding='utf-8')#以utf-8编码打开
+# data dealing
+fpin = open("scores.txt",encoding='utf-8')#open file encoding in 'utf-8'
 lines = fpin.readlines()
 fpin.close()
 print (lines)
@@ -16,6 +16,7 @@ print (lines)
 results = []
 
 for line in lines[ : ]:
+    # print("line: " + line)
     l = line.split()
     print (l)
     sum = 0
@@ -23,19 +24,10 @@ for line in lines[ : ]:
         sum += int(score)
     result = ("%s's score is : %d\n" %(l[0], sum))
 
-#计算每个人的分数
+#get every one's score
     results.append(result)
 
-#将结果写入results.txt
-fpout = open("result.txt", "w",encoding='utf-8')
+#write results into results.txt
+fpout = open("result.txt", "w", encoding='utf-8')
 fpout.writelines(results)
-fpout.close()      
-
-#处理后文件数据 results.txt
-'''
-刘备's score is : 215
-关羽's score is : 205
-张飞's score is : 376
-诸葛亮's score is : 100
-曹操's score is : 0
-'''
+fpout.close()

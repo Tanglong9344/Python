@@ -3,8 +3,9 @@
 # 1.键必须是唯一的；
 # 2.键只能是简单对象，比如字符串、整数、浮点数、bool值。
 # 3.list就不能作为键，但是可以作为值。
-# ex1
-print("示例1：")
+
+# --1
+print("--1：")
 score = {
     "A": 30,
     "tanglong": 98,
@@ -13,22 +14,24 @@ score = {
     False: 78
 }
 
-for name in score:  # 字典的遍历
+print(score)
+
+for name in score:  # traverse the score
     print(name, end='')
     print(": %d" % score[name])
 
-print("示例2：")
-score["tanglong"] = 100  # 更改
-score["刘备"] = 89  # 增加
-del score[12.22]  # 删除
+print("--2：")
+score["tanglong"] = 100  # modification
+score["LiuBei"] = 89  # add
+del score[12.22]  # delete
 
-for name in score:  # 字典的遍历
+for name in score:
     print(name, end='')
     print(": %d" % score[name])
 print("\n")
 
-# 新建一个空字典
-print("示例3：")
+# --3
+print("--3：")
 dic = {}
 dic[22] = 22
-print(dic[22])
+print(dic)

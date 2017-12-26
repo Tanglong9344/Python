@@ -1,5 +1,6 @@
-##数学基础运算
+# math in python
 import math
+
 print (math.pi)                   #常数π
 print (math.e)                    #常数E
 print (math.ceil(1.3))            #向上取整
@@ -17,3 +18,13 @@ print (math.acos(0.500))          #反余弦函数
 print (math.atan(1.000))          #反正切函数
 print (math.degrees(math.pi / 4)) #弧度化角度
 print (math.radians(180.0))       #角度化弧度
+
+# basic operation
+print (1+3)
+print (3*4)
+print (7/2)
+print (3&2)
+print (3<2)
+print (3>2)
+print (3e2)
+print (3e-2)

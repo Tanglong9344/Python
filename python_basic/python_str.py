@@ -1,12 +1,12 @@
-#字符串的遍历
-print ("字符串的遍历：")
-str = "Hello World!"
+# traverse a string
+print ("traverse a string: ")
+str = "Hello Python!"
 for ch in str:
     print (ch)
 
-#字符串索引和切片
-print ("字符串索引：")
-str = "Hello World!"
+# index and section in a string
+print ("index: ")
+str = "Hello Python!"
 print (str[-1])
 print (str[2])
 print (str[3 : 7])
