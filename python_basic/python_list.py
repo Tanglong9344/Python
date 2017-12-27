@@ -1,5 +1,4 @@
 #list
-
 print ("--1: ")
 l = range(1, 10)
 for i in l:
@@ -7,12 +6,9 @@ for i in l:
 print()
 print (l)
 
-#--2
+#--2, list can contain all kinds of types
 print ("--2: ")
-l = [1,3,6,7,9,13,17,99,11]
-for i in l:
-    print ("%d "%i, end='')
-print ()
+l = [1,3,"stringing",True,9,False,17,3.14,3+2j,[3,True,"list"],{12,"dictionary",6.28}]
 print (l)
 
 #--3
@@ -37,35 +33,23 @@ l[0] = 'animals'
 l[1] = 'birds'
 l[2] = 'water'
 l[3] = 'cups'
-for i in range (0, 4):
-    print ("%s "%l[i], end='')
-print ()
 print (l)
 
 #--6 concatenate
 print ("--6, cat: ")
 ll = ['bread','noodle','fruit','smile']
 l += ll
-for i in range (0, 8):
-    print ("%s "%l[i], end='')
-print ()
 print (l)
 
 #--7 add
 print ("--7,add: ")
 l.append('Hello Python!')
-for i in range (0, 5):
-    print ("%s "%l[i],end='')
-print ()
 print (l)
 
 #--8，delete
 print ("--8, del: ")
 l = ['meat', 'egg', 'fish', 'milk']
 del l[0]
-for i in range (0, 3):
-    print ("%s "%l[i], end='')
-print ()
 print (l)
 
 #--9，index and section

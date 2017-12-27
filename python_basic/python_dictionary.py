@@ -13,12 +13,14 @@ score = {
     12.22: 77,
     False: 78
 }
-
 print(score)
+print(score["tanglong"])
+print("keys: ", score.keys())
+print("values: ", score.values())
 
 for name in score:  # traverse the score
-    print(name, end='')
-    print(": %d" % score[name])
+    print(name, end=':')
+    print("%d" % score[name], end=", ")
 
 print("--2：")
 score["tanglong"] = 100  # modification
@@ -26,8 +28,8 @@ score["LiuBei"] = 89  # add
 del score[12.22]  # delete
 
 for name in score:
-    print(name, end='')
-    print(": %d" % score[name])
+    print(name, end=':')
+    print("%d" % score[name], end=', ')
 print("\n")
 
 # --3
