@@ -45,5 +45,3 @@ print("obj=", obj)
 
 exp = repr(obj)
 print("exp=", exp)
-
-

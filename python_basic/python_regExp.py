@@ -2,6 +2,7 @@
 print("ESC: ")
 print("\t hello \t world!\n")
 print(r"\t hello \tworld! \n")  # r 表示不对字符串中的转义字符做处理
+print(R"\t hello \tworld! \n")  # r 表示不对字符串中的转义字符做处理
 
 # regular expression-1
 # --1

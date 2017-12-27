@@ -11,12 +11,17 @@ score = {
     "tanglong": 98,
     12: 66,
     12.22: 77,
-    False: 78
+    False: 78,
+    ("11"): 88
 }
 print(score)
+print(str(score))
 print(score["tanglong"])
 print("keys: ", score.keys())
 print("values: ", score.values())
+print("length=",len(score))
+print("length=",score.__len__())
+print(type(score))
 
 for name in score:  # traverse the score
     print(name, end=':')
@@ -24,8 +29,8 @@ for name in score:  # traverse the score
 
 print("--2：")
 score["tanglong"] = 100  # modification
-score["LiuBei"] = 89  # add
-del score[12.22]  # delete
+score["LiuBei"] = 89     # add
+del score[12.22]          # delete
 
 for name in score:
     print(name, end=':')
@@ -36,4 +41,6 @@ print("\n")
 print("--3：")
 dic = {}
 dic[22] = 22
+print(dic)
+dic.clear() # clear dic
 print(dic)
