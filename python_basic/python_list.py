@@ -9,6 +9,10 @@ print (l)
 #--2, list can contain all kinds of types
 print ("--2: ")
 l = [1,3,"stringing",True,9,False,17,3.14,3+2j,[3,True,"list"],{12,"dictionary",6.28}]
+print("length: ",len(l))
+print(l + ["catenation"])
+print("stringing" in l)
+print(["AAA"]*3)
 print (l)
 
 #--3
@@ -74,3 +78,24 @@ N = 3
 while time < N:
     print ("From the list you randomly get: "+choice(list))
     time += 1
+
+# list methods
+print(l)
+
+l.append("egg")
+l.insert(-1,"egg")
+print(l)
+
+print(l.count("egg"))
+
+l.reverse() # 翻转
+print(l)
+
+l.sort()    # 排序
+print(l)
+
+l.pop(-1)
+print(l)
+
+l.remove("egg") # remove the first one that meets the condition
+print(l)
