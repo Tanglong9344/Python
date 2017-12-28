@@ -76,3 +76,35 @@ def divide(a,b):
     return a/b
 
 print(divide(3,0))
+
+
+# multiple decorator
+def star(func):
+    def inner(n):
+        print("*" * n)
+        func(n)
+        print("*" * n)
+    return inner
+
+def percent(func):
+    def inner(n):
+        print("%" * n)
+        func(n)
+        print("%" * n)
+    return inner
+
+# decorate --1
+@star
+@percent
+def printer(n):
+    pass
+
+printer(66)
+
+print("\n")
+# decorate --2
+def printer2(n):
+    pass
+printer2=star(percent(printer2))
+printer2(66)
+
