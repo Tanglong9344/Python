@@ -28,11 +28,18 @@ fp = open("test.txt")
 print (fp.read())
 fp.close()
 
-#file-4-2
+# write
 print ("file-4-2:")
-fp = open("test.txt","w") # w(writting)writing over old data
+fp = open("test.txt","w") # writing over old data
 fp.write("I am Tanglong.\nI am coding...")
 fp.close()
-fp = open("test.txt")
-print (fp.read())
+
+# read
+fp = open("test.txt",encoding="utf-8")
+print("mode: ",fp.mode)
+print("name: ",fp.name)
+print("encoding: ", fp.encoding)
+print("position: ",fp.tell())
+print ("content:\n",fp.read())
+print("position: ",fp.tell())
 fp.close()

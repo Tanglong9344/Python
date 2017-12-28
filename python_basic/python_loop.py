@@ -20,39 +20,10 @@ while i<n:
     i += 1
 print("=%d" % s)
 
-# Iterator
-list = [1,2,3,4,5,6,7,8,9,0]
-it = iter(list)
-print("it=", it)
-# traverse--1
-for x in it:
-    print(x, end=' ')
+# reverse print
+for i in range(n,-1,-1): # 左闭右开区间(satrt, end, step)
+    print(i, end=', ')
 print()
-# traverse--2
-import sys
-it = iter(list)
-while True:
-    try:
-        print(next(it), end=' ')
-    except StopIteration:
-        # sys.exit()
-        break
-print()
-
-# generator
-import sys
-def fibonacci(n): #generator function
-   a, b, counter = 1, 1, 1
-   while True:
-      if (counter > n):
-         return
-      yield a
-      a, b = b, a + b
-      counter += 1
-f = fibonacci(10) #f is iterator object
-
-while True:
-   try:
-      print (next(f), end=" ")
-   except StopIteration:
-      sys.exit()
+# print vs vreverse print
+for i in range(-1,n,1):
+    print(i, end=', ')
