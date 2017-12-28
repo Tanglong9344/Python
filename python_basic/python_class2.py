@@ -99,3 +99,4 @@ class HideAge:
 ha = HideAge("Tanglong", 110)
 print(ha.name)
 ha.show()
+
