@@ -6,13 +6,6 @@ print(R"\t hello \tworld! \n")  # r 表示不对字符串中的转义字符做�
 
 # regular expression-1
 # --1
-'''
-re是python里的正则表达式模块。
-findall是其中一个方法，
-用来按照提供的正则表达式，
-去匹配文本中的所有符合条件的字符串。
-返回结果是一个包含所有匹配的list。
-'''
 import re
 
 print("--1：")
@@ -70,3 +63,28 @@ if num:
     print(num)
 else:
     print("Not found!")
+
+text = "Hi, my name is Tanglong, Merry Christmas.welcome to Python,let me show you around."
+# match-group
+machList = re.match(r'(.*) is (.*?) .*',text,re.I)
+if machList:
+    print("searchList.group(): ",machList.group())
+    print("searchList.group(1): ", machList.group(1))
+    print("searchList.group(2): ", machList.group(2))
+else:
+    print("Not match...")
+    
+# seerch-group
+searchList = re.search(r'(.*) is (.*?) .*',text,re.I)
+if searchList:
+    print("searchList.group(): ",searchList.group())
+    print("searchList.group(1): ", searchList.group(1))
+    print("searchList.group(2): ", searchList.group(2))
+else:
+    print("Not match...")
+
+# match vs search
+str    = "family"
+subStr = "am"
+print(re.match(subStr,str))  # match from the start position of the str
+print(re.search(subStr,str)) #search through the str and find the matching part
