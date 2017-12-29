@@ -8,14 +8,16 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 
+from email.mime.image import MIMEImage
+
 #qq邮箱smtp服务器
 host_server = 'smtp.qq.com'
 #sender_qq为发件人的qq号码
-sender_qq = '16***09'
+sender_qq = '1654200709'
 #qq邮箱的授权码
-autho_code = 'eim***gha'
+autho_code = 'eimfodklvltgcgha'
 #发件人的邮箱
-sender_qq_mail = '16***09@qq.com'
+sender_qq_mail = '1654200709@qq.com'
 #收件人邮箱
 receiver = 'flyingfish9344@gmail.com'
 #邮件的正文内容
@@ -43,6 +45,20 @@ att["Content-Type"] = 'application/octet-stream'
 att["Content-Disposition"] = 'attachment; filename="attach_result.txt"'
 msg.attach(att)
 
+# attach a image
+# 读取图片
+import os
+str = os.getcwd() + ''
+strs = str.split("\\")
+root = strs[0]+"/"+strs[1]
+
+fp = open(root+'/picture/python-logo.png', 'rb')
+msgImage = MIMEImage(fp.read())
+fp.close()
+# 添加图片
+msgImage.add_header('Content-ID', 'send_image')
+msg.attach(msgImage)
+print(msg)
 # send mail
 smtp.sendmail(sender_qq_mail, receiver, msg.as_string())
 smtp.quit()
