@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<poems>
+	<!-- 曹操 -->
+	<poem address="三国.魏" author="曹操">
+		<title>观沧海</title>
+		<description>
+	东临碣石，以观沧海。
+	水何澹澹，山岛竦峙。
+	树木丛生，百草丰茂。
+	秋风萧瑟，洪波涌起。
+	日月之行，若出其中。
+	星汉灿烂，若出其里。
+	幸甚至哉，歌以咏志。
+		</description>
+	</poem>
+	<!-- 李白 -->
+	<poem address="唐" author="李白">
+		<title>静夜思</title>
+		<description>
+	床前明月光，疑是地上霜。
+	举头望明月，低头思故乡。
+		</description>
+	</poem>
+	<!-- 苏轼 -->
+	<poem address="北宋" author="苏轼">
+		<title>六月二十七日望湖醉书（其二）</title>
+		<description>
+	黑云翻墨未遮山，
+	白雨跳珠乱人船。
+	卷地风来忽吹散，
+	望湖楼下水如天。
+		</description>
+	</poem>
+	<poem address="唐" author="杜甫">
+		<title>春望</title>
+		<description>
+	国破山河在，城春草木深。
+	感时花溅泪，恨别鸟惊心。
+	烽火连三月，家书抵万金。
+	白头搔更短，浑欲不胜簪。
+		</description>
+	</poem>
+	<poem address="中国" author="毛泽东">
+		<title>长征</title>
+		<description>
+	红军不怕远征难， 万水千山只等闲 。
+	五岭逶迤腾细浪， 乌蒙磅礴走泥丸。
+	金沙水拍云崖暖， 大渡桥横铁索寒。
+	更喜岷山千里雪， 三军过后尽开颜 。
+		</description>
+	</poem>
+</poems>
