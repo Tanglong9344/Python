@@ -10,3 +10,5 @@
 + [The Python Tutorial](https://docs.python.org/3.5/tutorial/)
 + [Python Package Index](https://pypi.python.org/pypi)
 + [Zen of Python](https://www.python.org/dev/peps/pep-0020/)
++ [Python教程](http://www.liujiangblog.com/)
++ [CrossInCode](http://crossincode.com/home/)
