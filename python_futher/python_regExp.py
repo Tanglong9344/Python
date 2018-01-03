@@ -88,3 +88,8 @@ str    = "family"
 subStr = "am"
 print(re.match(subStr,str))  # match from the start position of the str
 print(re.search(subStr,str)) #search through the str and find the matching part
+
+# replace
+str = "he23l12lo56"
+str = re.sub(r'\d', ',' ,str)
+print(str)
