@@ -12,7 +12,7 @@ im = Image.open('image/im.png')
 print(" im.format:%s\n im.size:%s\n im.mode:%s\n" %(im.format, im.size, im.mode))
 
 # show a image
-#im.show()
+# im.show()
 
 # create a image
 # 1.Image.new(mode,size)
