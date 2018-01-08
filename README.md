@@ -1,4 +1,4 @@
-![Python](https://github.com/Tanglong9344/Python/blob/master/picture/python-logo.png)
+![Python](picture/python-logo.png)
 # Python 
 ##### version Python 3.5.3
 ### abstract
@@ -7,8 +7,9 @@
 + [Python Exception](https://github.com/Tanglong9344/py/blob/master/python_exception.md)
 ---
 ### 参考资料
-+ [The Python Tutorial](https://docs.python.org/3.5/tutorial/)
 + [Python Package Index](https://pypi.python.org/pypi)
++ [The Python Tutorial](https://docs.python.org/3.5/tutorial/)
 + [Zen of Python](https://www.python.org/dev/peps/pep-0020/)
-+ [Python教程](http://www.liujiangblog.com/)
++ [PythonForFun](http://www.openbookproject.net/py4fun/)
 + [CrossInCode](http://crossincode.com/home/)
++ [Python教程](http://www.liujiangblog.com/)
