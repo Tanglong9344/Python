@@ -6,27 +6,27 @@ print(3.14)
 
 # string
 print("1234")
-print ("Welcome to Python")
+print("Welcome to Python")
 print("Good boy\n")
 print('"Good"boy\n')
 print("'Good'boy\n")
 print('I\'m a \"Good\" boy\n')
-str1='*\n***\n*****\n***\n*'
+str1 = '*\n***\n*****\n***\n*'
 print(str1)
 
-str2='''
+str2 = '''
 Stay hunGry,
 stay foolish.
-	-- Steve Jobs
+-- Steve Jobs
 '''
 print(str2)
 
-s1="Hello"
-s2="World!"
+s1 = "Hello"
+s2 = "World!"
 print(s1)
 print(s2)
 print(s1+s2)
-s=s1+s2
+s = s1+s2
 print(s)
 
 s += "2017"
@@ -68,7 +68,7 @@ print()
 # Mutiply table
 for i in range(1, 10):
     for j in range(1, 10):
-        print("%d*%d=%2d\t" % (j, i, i * j), end='')
+        print("%d*%d = %2d\t" % (j, i, i * j), end='')
     print()
 
 # number-1
@@ -84,4 +84,4 @@ for i in range(1, 4):
 # number-3
 for i in range(1, 4):
     for j in range(1, 5):
-        print("%d*%d=%2d" % (i, j, i * j))
+        print("%d*%d = %2d" % (i, j, i * j))

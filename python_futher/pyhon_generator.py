@@ -1,7 +1,7 @@
 # generator
 import sys
 
-def fibonacci(n): # generator function
+def fibonacci(n):  # generator function
    a, b, counter = 1, 1, 1
    while True:
       if (counter > n):

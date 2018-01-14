@@ -2,9 +2,9 @@
 print("单一赋值：")
 i = 110          # 整型
 print(type(i))
-print("i=",i)
-print("0x110=",0x110)
-print("0o110=",0o110)
+print("i=",  i)
+print("0x110=", 0x110)
+print("0o110=", 0o110)
 
 f = 9.99         # 浮点数
 print(type(f), end=', ')
@@ -14,11 +14,11 @@ c = 2 + 3j      # 复数
 print(type(c), end=', ')
 print(c)
 
-str  = "Tanglong"  # 字符串
-print(type(str), end=', ')
-print(str)
+str0 = "Tanglong"  # 字符串
+print(type(str0), end=', ')
+print(str0)
 
-b    = True        # 布尔值
+b = True        # 布尔值
 print(type(b), end=', ')
 print(b)
 
