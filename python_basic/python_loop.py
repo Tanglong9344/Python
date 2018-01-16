@@ -27,3 +27,17 @@ print()
 # print vs vreverse print
 for i in range(-1, n, 1):
     print(i, end=', ')
+
+# 九九乘法表==1
+print("\nFormat--1:")
+for i in range(1,10):
+    for j in range(1,10):
+        print('{0:d}X{1:d}={2:2d}'.format(i,j,i*j),end=' ')
+    print()
+
+# 九九乘法表==1
+print("\nFormat--2:")
+for i in range(1,10):
+    for j in range(1,10):
+        print('%dX%d=%2d' %(i,j,i*j),end=' ')
+    print()

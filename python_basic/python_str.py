@@ -28,7 +28,10 @@ print("123".isdigit())
 print(len(str0))        # the length of str
 print(str0.lower())     # to lower case
 print(str0.upper())     # to upper case
-print(max(str))        # return the maximum char in str
+print(max(str0))        # return the maximum char in str
 print(str0.rstrip())    # delete all the whitespace
 print(str0.split(','))  # splite str according to ','
 print(str0.swapcase())  # swap the case of str
+
+str0 = "StringMultiply" * 3
+print(str0)

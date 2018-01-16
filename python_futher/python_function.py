@@ -1,56 +1,93 @@
 # A function without parameters
+# Build-in Functions: https://docs.python.org/3/library/functions.html
+
+
 def hello():
     print("Hello!")
+
 
 # Call the function
 hello()
 
 # A function with a parameter
+
+
 def mysum(n):
-    s=0
-    for i in range (1,n):
+    s = 0
+    for i in range(1, n):
         s += i
     return s
 
+
 # Call the Function
-print (mysum(11))
+
+
+print(mysum(11))
 
 # A function with two parameters
-def myadd(a,b):
+
+
+def myadd(a, b):
     return a + b
 
+
 # Call the Function
-print(myadd(1,3))
+print(myadd(1, 3))
 
 # A function with default value
-def hello (name = 'World!'):
-    print ("Hello " + name)
+
+
+def hello(name='World!'):
+    print("Hello " + name)
+
 
 hello()
 hello("Python!")
 
 # variable parameters
-def vars(arg, *args):
+
+
+def varss(arg, *args):
     print("arg=", arg)
     for x in args:
-        print(x, end=',')
+        print(x, end=', ')
     print()
 
-vars("para")
-vars(1,3,5,7,9)
+
+varss("para")
+varss(1, 3, 5, 7, 9)
 
 # anonymous function(lambda)
-mysum = lambda a, b: a + b
+mySum = lambda a, b:a + b
 
-print("mysun: ", mysum(3,4))
+print("mySum: ", mySum(3, 4))
 
 # return
-def mysum2(a,b):
+
+
+def mysum2(a, b):
     return a + b
 
-print("mysum2:", mysum2(5,7))
+
+print("mysum2:", mysum2(5, 7))
+
+# mysum2 in another form
+
+
+def mysum22(s,a, b):
+    print(s,a + b)
+
+
+# deliver position argument--have to deliver arguments in right order
+mysum22("form1:",1, 2)
+# deliver keyword argument--don't have to deliver arguments in right order
+mysum22(s="form2:",a=1, b=2)
 
 # key words parameters
-def print_str(str):
-    print(str)
-print_str(str = "Hello Python function...")
+
+
+def print_str(str0):
+    print(str0)
+
+
+print_str(str0="Hello Python function...")
