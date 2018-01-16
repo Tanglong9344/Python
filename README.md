@@ -5,6 +5,7 @@
 + [Python Basic](https://github.com/Tanglong9344/Python/tree/master/python_basic)
 + [Python Futher](https://github.com/Tanglong9344/Python/tree/master/python_futher)
 + [Python Exception](https://github.com/Tanglong9344/py/blob/master/python_exception.md)
++ [PyCharm Keyboard Shortcuts](https://github.com/Tanglong9344/py/blob/master/keyboard_shortcuts.md)
 ---
 ### 参考资料
 + [Python Package Index](https://pypi.python.org/pypi)
