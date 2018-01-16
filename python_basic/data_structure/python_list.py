@@ -98,14 +98,3 @@ print(list0)
 
 list0.remove("egg")  # remove the first one that meets the condition
 print(list0)
-
-# common way
-list_common = []
-for i in range(1, 11):
-    list_common.append(i)
-
-print("list_common:",list_common)
-
-# list comprehension
-list_compre = [i for i in range (1,11)]
-print("list_compre:", list_compre)
