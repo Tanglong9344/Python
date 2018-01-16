@@ -1,4 +1,4 @@
-# python tuple-can not be modified
+# python tuple，元组-can not be modified
 tuple0 = (3, 6.2828, True, "TUPLE")
 print(tuple0[0])
 print(tuple0[-1])
