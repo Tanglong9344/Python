@@ -1,33 +1,25 @@
-#old data
-'''
-#-- scores.txt
-刘备 23 35 44 47 66
-关羽 60 77 68
-张飞 97 99 89 91
-诸葛亮 100
-曹操 
-'''
+# old data:scores.txt
 # data dealing
-fpin = open("scores.txt",encoding='utf-8')#open file encoding in 'utf-8'
+fpin = open("scores.txt", encoding='utf-8')  # open file encoding in 'utf-8'
 lines = fpin.readlines()
 fpin.close()
-print (lines)
+print(lines)
 
 results = []
 
-for line in lines[ : ]:
+for line in lines[:]:
     # print("line: " + line)
-    l = line.split()
-    print (l)
-    sum = 0
-    for score in l[1 : ]:
-        sum += int(score)
-    result = ("%s's score is : %d\n" %(l[0], sum))
+    list0 = line.split()
+    print(list0)
+    sum0 = 0
+    for score in list0[1:]:
+        sum0 += int(score)
+    result = ("%s's score is : %d\n" % (list0[0], sum0))
 
-#get every one's score
+# get every one's score
     results.append(result)
 
-#write results into results.txt
+# write results into results.txt
 fpout = open("result.txt", "w", encoding='utf-8')
 fpout.writelines(results)
 fpout.close()
