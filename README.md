@@ -11,7 +11,6 @@
 ---
 ### 参考资料
 + [PythonForFun](http://www.openbookproject.net/py4fun/)
-+ [Python教程](http://www.liujiangblog.com/)
 + [Awesome-Python](https://awesome-python.com/)
 + [Python3_Course](https://www.python-course.eu/python3_course.php)
 + [Real Python](https://realpython.com/)
