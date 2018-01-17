@@ -85,3 +85,6 @@ for i in range(1, 4):
 for i in range(1, 4):
     for j in range(1, 5):
         print("%d*%d = %2d" % (i, j, i * j))
+
+# if the file is executed, the '__name__' will be '__main__'
+print(__name__)

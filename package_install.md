@@ -8,6 +8,7 @@
     |pip3(2) install packageName|安装python3(2)库|
     |pip[3] install --upgrade packageName|升级库|
     |pip[3] uninstall packageName|卸载库|
+    |pip[3] show packageName|显示库的信息|
 + 使用PyCharm安装
     + 打开设置窗口-Project:py->Project Interpreter->点击右侧'+'
     ---
