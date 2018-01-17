@@ -14,3 +14,4 @@
 + [PythonForFun](http://www.openbookproject.net/py4fun/)
 + [CrossInCode](http://crossincode.com/home/)
 + [Python教程](http://www.liujiangblog.com/)
++ [Awesome-Python](https://awesome-python.com/)
