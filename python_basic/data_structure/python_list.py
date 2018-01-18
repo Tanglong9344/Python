@@ -98,3 +98,6 @@ print(list0)
 
 list0.remove("egg")  # remove the first one that meets the condition
 print(list0)
+
+listt = [12, [34,'sublist'], ['sublist2', [66, 88]], 'list', [True, False]]
+print(listt)

@@ -1,3 +1,6 @@
+# declare encoding(default ASCII)
+# -*- coding:utf-
+
 # int
 print(1234)
 

@@ -12,12 +12,12 @@
 
 # 2. 明确目标(Items), 修改'items.py'文件
 # 3. 制作爬虫(Spider)
-  # name：爬虫标识名称
-  # start_urls：待爬取的URL列表
-  # parse：解析方法
+# name：爬虫标识名称
+# start_urls：待爬取的URL列表
+# parse：解析方法
 # 4. 存储内容(pip line)
 
 
-import scrapy
+import scrapy as sy  # alias
 
-print(scrapy.item)
+print(sy.item)
