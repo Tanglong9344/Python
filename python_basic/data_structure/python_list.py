@@ -101,3 +101,15 @@ print(list0)
 
 listt = [12, [34,'sublist'], ['sublist2', [66, 88]], 'list', [True, False]]
 print(listt)
+
+# reference -- refer to the memory that stored object
+test = [1, 2, 3, 4, 5, 6]
+test1 = test  # reference to the same object
+del test1[0]
+print(test1)
+print(test)
+
+test2 = test[:]  # make a copy by doing a full slice, and they refer to difference object
+del test2[0]
+print(test2)
+print(test)

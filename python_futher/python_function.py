@@ -81,6 +81,7 @@ def mysum22(s, a, b):
 # deliver position argument--have to deliver arguments in right order
 mysum22("form1:", 1, 2)
 # deliver keyword argument--don't have to deliver arguments in right order
+# this is realised by a data structure called dictionary
 mysum22(s="form2:", a=1, b=2)
 
 # key words parameters

@@ -21,3 +21,6 @@
 import scrapy as sy  # alias
 
 print(sy.item)
+
+# use the built-in dir function to list the identifiers that a module defines.
+print(dir(scrapy))

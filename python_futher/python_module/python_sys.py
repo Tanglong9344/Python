@@ -20,3 +20,6 @@ sys.stdout.flush()
 print("Input(ctrl+d exit input):")
 ss = sys.stdin.read()
 print('U input:',ss)
+
+# use the built-in dir function to list the identifiers that a module defines.
+print(dir(sys))
