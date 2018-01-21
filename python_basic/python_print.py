@@ -1,6 +1,5 @@
 # declare encoding(default ASCII)
 # -*- coding:utf-
-
 # int
 print(1234)
 
@@ -52,7 +51,7 @@ print()
 # --2
 for i in range(0, 5):
     for j in range(0, 5):
-        print('* ', end='')
+        print('* ', end=' ')
     print()
 print()
 
