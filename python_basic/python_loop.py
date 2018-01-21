@@ -9,6 +9,10 @@ for i in range(1, n):
 print(" = ", end='')
 print(s)
 
+# set the step to 2
+for i in range(1, n, 2):
+    print(i, end=' ')
+print()
 # while
 s = 0
 i = 1

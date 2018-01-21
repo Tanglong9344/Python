@@ -77,6 +77,11 @@ print('str4=', str4)
 str5 = 'Hello ' \
        'backslash'
 print('str5=', str5)
+# or just do like this
+print('' \
+      '' \
+      '' \
+      'This is a test about backslash')
 
 # raw strings
 str6 = r'This is a \t raw string \n'
