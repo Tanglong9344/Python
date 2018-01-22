@@ -44,18 +44,18 @@ def hello(name='World!'):
 hello()
 hello("Python!")
 
-# variable parameters
+# variable parameters--in fact it's tuple
 
 
-def varss(arg, *args):
+def varsTuple(arg, *args):
     print("arg=", arg)
     for x in args:
         print(x, end=', ')
     print()
 
 
-varss("para")
-varss(1, 3, 5, 7, 9)
+varsTuple("para")
+varsTuple(1, 3, 5, 7, 9)
 
 # anonymous function(lambda)
 mySum = lambda a, b:a + b
