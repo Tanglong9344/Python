@@ -17,7 +17,7 @@ def abort_if_data_doesnt_exist(data_id):
         abort(404, message="datas[{}] doesn't exist".format(data_id))
 
 parser = reqparse.RequestParser()
-parser.add_argument('task')
+parser.add_argument('data')
 
 
 # data
@@ -34,9 +34,9 @@ class data(Resource):
 
     def put(self, data_id):
         args = parser.parse_args()
-        task = {'task': args['task']}
-        datas[data_id] = task
-        return task, 201
+        data = {'data': args['data']}
+        datas[data_id] = data
+        return data, 201
 
 
 # dataList

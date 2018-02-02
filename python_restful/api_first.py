@@ -18,3 +18,5 @@ if __name__ == '__main__':
         app.run(debug=True)
 
 # We can get datas by visiting 'http://127.0.0.1:5000/datas'
+# download curl: https://curl.haxx.se/download.html
+# windows-64-zips
