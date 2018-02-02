@@ -38,3 +38,6 @@ print("--7：")
 list0 = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF"]
 num = random.sample(list0, 3)  # 从list随机选取3个元素组成一个新序列
 print(num)
+
+# use the built-in dir function to list the identifiers that a module defines.
+print(dir(random))

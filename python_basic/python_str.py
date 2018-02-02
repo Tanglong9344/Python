@@ -1,3 +1,4 @@
+# -*- coding:utf-  # coding declaration
 # import module 'string'
 import string
 
@@ -18,7 +19,7 @@ print(str0 * 3)      # print this string two times
 print(str0 + ", Bye Python.")
 
 # 操作字符串的内置方法
-str0 = "i am Tanglong, I am from China."
+str0 = 'i am Tanglong, I am from China.'
 print(str0.capitalize())  # convert the first char to upper case
 print(str0.count('a'))    # calculate the times of 'i'
 print(str0.find("am"))    # return index of "am"
@@ -56,3 +57,38 @@ print(string.ascii_uppercase)
 print(string.hexdigits)
 # octal digits
 print(string.octdigits)
+
+# single quotes
+str1 = 'Hello single quotes'
+print('str1=', str1)
+# souble quotes
+str2 = "Hello double quotes"
+print('str2=', str2)
+# triple quotes--support multi-lines string
+str3 = '''Hello
+triple
+quotes
+'''
+print('str3=', str3)
+# escape sequences
+str4 = 'Hello, I\'m Tanglong'
+print('str4=', str4)
+# backslash
+str5 = 'Hello ' \
+       'backslash'
+print('str5=', str5)
+# or just do like this
+print('' \
+      '' \
+      '' \
+      'This is a test about backslash')
+
+# raw strings
+str6 = r'This is a \t raw string \n'
+print('str6=', str6)
+# unicode string
+str7 = u'This is a unicode string vs 这是Unicode编码的文本'
+print('str7=', str7)
+# string literal concatenaion
+str8 = 'Hello\t' 'concatenation'  # These two strings are automatically converted into one
+print('str8=', str8)

@@ -58,3 +58,6 @@ while i < 10000:
     i += 0.01
 end = time.clock()
 print("Time:", (end-start))
+
+# use the built-in dir function to list the identifiers that a module defines.
+print(dir(time))
