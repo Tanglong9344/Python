@@ -6,7 +6,7 @@
 + [Python Futher](https://github.com/Tanglong9344/Python/tree/master/python_futher)
 + [Zen of Python](https://github.com/Tanglong9344/py/tree/master/python_zen)
 + [Python Exception](https://github.com/Tanglong9344/py/blob/master/python_exception.md)
-+ [Ptrhon Package install](https://github.com/Tanglong9344/py/blob/master/package_install.md)
++ [Python Package install](https://github.com/Tanglong9344/py/blob/master/package_install.md)
 + [PyCharm Keyboard Shortcuts](https://github.com/Tanglong9344/py/blob/master/keyboard_shortcuts.md)
 ---
 ### 参考资料
