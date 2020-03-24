@@ -3,3 +3,4 @@
 2. pip安装
 3. PyQt5安装：pip install PyQt5 -i https://mirrors.aliyun.com/pypi/simple
 4. qtdesigner安装:pip install PyQt5-tools -i https://mirrors.aliyun.com/pypi/simple
+5. chart安装 pip install PyQtChart
