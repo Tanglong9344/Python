@@ -1,50 +1,35 @@
-# type transform
-str0 = 'Tanglong'   # string
-print("str0=", str0)
-
+# to int
 i = int(65.31415)
-print("i=", i)
-
-f = float(i)        # to float
-print("f=", f)
-
-oct0 = oct(i)
-print("oct=", oct0)  # to octonary
-
-hex0 = hex(i)
-print("hex=", hex0)  # to hexadecimal
-
-ch = chr(i)
-print("ch=", ch)  # to char
-
-ii = ord(ch)
-print("ii=", ii)  # to number
-
-c = complex(3, 2)  # complex
-print("c=", c)
-
-tup = tuple(str0)
-print("tup=", tup)
-
-list0 = list(str0)
-print("list0=", list0)
-
-s = set(str0)
-print("s=", s)
-
-frozens = frozenset(str0)
-print("frozens=", frozens)
-
-dic = dict([(1, "One"), (2, "Two")])
-print("dic=", dic)
-
-
-class Createobj:
+print('int:', i)
+# to float
+print('float:', float(i))
+# to octonary
+print('oct:', oct(i))
+# to hexadecimal
+print('hex:', hex(i))
+# to char
+print('chr:', chr(i))
+# to number
+print('ord::', ord('A'))
+# to complex
+print('complex:', complex(3, 2))
+# string
+str = 'Tang long'
+print('str:', str)
+# tuple
+print('tuple:', tuple(str))
+# list
+print('list:', list(str))
+# set
+print('set:', set(str))
+# frozenset
+print('frozenset:', frozenset(str))
+# dict
+print('dict:', dict([(1, 'One'), (2, 'Two')]))
+# object
+class CreateObject:
     pass
 
-
-obj = Createobj()  # object
-print("obj=", obj)
-
-exp = repr(obj)
-print("exp=", exp)
+print('object:',CreateObject() )
+# repr(object to string)
+print('repr  :', repr(CreateObject()))

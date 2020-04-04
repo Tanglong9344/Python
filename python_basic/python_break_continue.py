@@ -1,16 +1,19 @@
-# break && continue
 # break
 while True:
-    x = input("Input strings and 'q'for quit: ")
-    print(x)
+    x = input("Input a string,'q'for quit: ")
     if x == 'q':
         break    # run out of loop
+    print(x)
 
 # continue
-while True:
-    x = int(input("input numbers and 110 for quit: "))
-    if x < 60:
+while False:
+    try:
+        x = int(input("input a number,>100 for quit: "))
+    except Exception as e:
+        print('input error:',e)
+        continue
+    if x <= 100:
+        print(x)
         continue  # continue the next loop
-    print(x)
-    if x == 110:
+    if x > 100:
         break     # run out of loop

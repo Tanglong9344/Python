@@ -1,25 +1,24 @@
-#  format output
 ch = 'A'
-print("%c" % ch)    # 字符
+print("字符:%c" % ch)
 
 s = 'Python'
-print("%s" % s)  # 字符串
-i = -1024
-print("%d" % i)     # 十进制整数
-print("%5d" % i)    # 指定宽度
-print("%i" % i)     # 带符号的十进制整数
-print("%u" % i)     # 无符号的十进制整数
-print("%f" % i)     # 十进制浮点数
-print("%.2f" % i)   # 指定精度
-print("%3.2f" % i)  # 指定宽度和精度
-print("%e" % i)     # 科学计数
-print("%E" % i)     # 科学计数
-print("%o" % i)     # 八进制
-print("%X" % i)     # 十六进制
-print("%x" % i)     # 十六进制
-print("%#o" % i)   # 八进制，添加前导符号
-print("%#X" % i)   # 十六进制，添加前导符号
-print("%#x" % i)   # 十六进制，添加前导符号
-print("%-10d" % i)  # 左对齐
-print("%+10d" % i)  # 右对齐
-print("%010d" % i)  # 空位补0
+print("字符串：%s" % s)
+i = 1024
+print("十进制(decimal)整数:%d" % i)
+print("指定宽度为6:%6d" % i)
+print("带符号的十进制整数:%i" % i)
+print("无符号的十进制整数:%u" % i)
+print("十进制浮点数:%f" % i)
+print("指定精度(保留两位小数):%.2f" % i)
+print("指定宽度和精度:%5.2f" % i)
+print("科学计数:%e" % i)
+print("科学计数2:%E" % i)
+print("八进制:%o" % i)
+print("十六进制:%X" % i)
+print("十六进制2:%x" % i)
+print("八进制，添加前导符号:%#o" % i)
+print("十六进制，添加前导符号:%#X" % i)
+print("十六进制，添加前导符号2:%#x" % i)
+print("左对齐:%-10d" % i)
+print("右对齐:%+10d" % i)
+print("空位补0:%010d" % i)

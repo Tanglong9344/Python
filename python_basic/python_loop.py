@@ -35,13 +35,33 @@ for i in range(-1, n, 1):
 # 九九乘法表==1
 print("\nFormat--1:")
 for i in range(1,10):
-    for j in range(1,10):
+    for j in range(1,i+1):
         print('{0:d}X{1:d}={2:2d}'.format(i,j,i*j),end=' ')
     print()
 
 # 九九乘法表==1
 print("\nFormat--2:")
 for i in range(1,10):
-    for j in range(1,10):
+    for j in range(1,i+1):
         print('%dX%d=%2d' %(i,j,i*j),end=' ')
     print()
+
+# while loop
+i=0
+j=0
+while i<9:
+    i+=1
+    while j<i:
+        j+=1
+        print('%dX%d=%2d' % (j, i, i * j), end=' ')
+    print()
+    j=0
+
+# for loop
+for i in range(1,10):
+    for j in range(1,i+1):
+        print('%dX%d=%2d' % (j, i, i * j), end=' ')
+    print()
+
+    print("1",end=' ')
+    print("1")

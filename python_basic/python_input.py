@@ -1,19 +1,26 @@
-# default for string
-x = input("Please input: ")
+x = input("Please input a string: ")
 print(x)
 
-# convert to int
-x = int(input("Please input: "))
+try:
+    x = int(input("Please input a number: "))
+except Exception as e:
+    print('请输入整数')
+    x = ''
 print(x)
 
-# convert to float
-x = float(input("Please input: "))
+try:
+    x = float(input("Please input a float: "))
+except Exception as e:
+    print('请输入数字')
+    x=''
 print(x)
 
-# convert to str
-x = str(input("Please input: "))
+x = str(input("Please input a string: "))
 print(x)
 
-# convert to bool
-x = bool(input("Please input: "))
+try:
+    x = bool(input("Please input a bool: "))
+except Exception as e:
+    print('请输入布尔值')
+    x = ''
 print(x)
