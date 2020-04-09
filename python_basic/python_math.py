@@ -6,6 +6,8 @@ print('PI:',math.pi)                               # 常数π
 print('E:',math.e)                                 # 常数E
 print('math.ceil(1.3):',math.ceil(1.3))            # 向上取整
 print('math.floor(1.3):',math.floor(1.3))          # 向下取整
+print('round(1.3):',round(1.3))          # 四舍五入
+print('round(1.8):',round(1.8))          # 四舍五入
 print('math.pow(2, 3):',math.pow(2, 3))            # 指数运算
 print('math.exp(2):',math.exp(2))                  # e的指数
 print('math.log(100, 10):',math.log(100, 10))      # 对数运算
