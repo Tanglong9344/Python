@@ -1,6 +1,3 @@
-# further operations
-
-# common way
 list_common = []
 for i in range(1, 5):
     list_common.append(i)

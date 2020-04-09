@@ -17,3 +17,16 @@ print("union:", s.union(s2))
 
 # return differenceF of two sets
 print(s.difference(s2))
+
+# 数据添加
+datas = {}
+print(datas.get(1))
+print(datas.get(2))
+print(datas.get(4))
+data = datas.get(4)
+if data is None:
+    data = []
+a = {'a': '11', 'b': '22'}
+data.append(a)
+datas[4]=data
+print(datas.get(4))

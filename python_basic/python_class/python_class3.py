@@ -1,21 +1,14 @@
-# class variables and object variables
-
-
 class Person:
     '''Represents a person.'''
-    population = 0  # class variable
+    population = 0
 
     def __init__(self, name):  # be called when a object is created
-        '''Initializes the person's data.'''
-        self.name = name  # object variable
-        print('(Initializing %s)' % self.name)
-        # When this person is created, he/she
-        # adds to the population
+        self.name = name
+        print('(Initialization %s)' % self.name)
         Person.population += 1
 
     def __del__(self):  # be called when a object is destroyed and there is no guarantee when that method will be run.
-        '''I am leaving.'''
-        print('%s says bye.' % self.name)
+        print('%s says goodbye.' % self.name)
         Person.population -= 1
         if Person.population == 0:
             print('I am the last one.')
@@ -23,21 +16,19 @@ class Person:
             print('There are still %d people left.' % Person.population)
 
     def sayhi(self):
-        '''Greeting by the person.
-        Really, that's all it does.'''
         print('Hi, my name is %s.' % self.name)
 
     def howmany(self):
-        '''Prints the current population.'''
         if Person.population == 1:
-            print('I am the only person here.')
+            print('There is only one person left.')
         else:
             print('We have %d persons here.' % Person.population)
 
 
-p1 = Person('Tanglong001')
+p1 = Person('Tang long 001')
 p1.sayhi()
 p1.howmany()
-p2 = Person('Tanglong002')
+
+p2 = Person('Tang long 002')
 p2.sayhi()
 p2.howmany()

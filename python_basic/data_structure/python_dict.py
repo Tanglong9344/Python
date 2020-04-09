@@ -43,3 +43,18 @@ dic = {}
 print(dic)
 dic.clear()  # clear dic2
 print(dic)
+
+# str<==> dict
+d0 = {'a':'1','b':'2'}
+# dict=>str
+s = str(d0)
+print(s)
+print(type(s))
+# srt=> dict
+s0 = "{'a':'1','b':'2'}\n"
+d = eval(s0)
+print(d)
+print(type(d))
+
+
+

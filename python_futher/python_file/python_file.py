@@ -14,9 +14,13 @@ fp.close()
 
 # file-3
 print("file-3:")
-fp = open("test.txt", "r")
-data = fp.readlines()  # read all lines
-print(data)
+try:
+    fp = open("test.txt", "r")
+    data = fp.readlines()  # read all lines
+    print(data)
+except Exception as e:
+    print('open file failed:',e)
+    fp = open("test.txt", "w")
 fp.close()
 
 # file-4-1
