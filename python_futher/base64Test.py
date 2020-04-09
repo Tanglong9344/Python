@@ -1,7 +1,8 @@
 import base64
 
-image = 'image/im_type.png'
+image = 'image/base64.jpg'
 with open(image, 'rb') as f:
     image = f.read()
-    image_base64 = str(base64.b64encode(image), encoding='utf-8')
-    print("base64:",image_base64)
+    print(image)
+    image_base64 = base64.b64encode(image)
+    print(str(image_base64,encoding='utf-8'))
