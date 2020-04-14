@@ -4,15 +4,7 @@
 # 2.键只能是简单对象，比如字符串、整数、浮点数、bool值。
 # 3.list就不能作为键，但是可以作为值。
 
-# --1
-print('--1：')
-score = {
-    'A': 30,
-    'tanglong': 98,
-    12: 66,
-    12.22: 77,
-    False: 78,
-}
+score = {'A': 30,'tanglong': 98,12: 66,12.22: 77,False: 78}
 print(score)
 print(str(score))
 print(score['tanglong'])

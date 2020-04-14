@@ -24,3 +24,4 @@ print('math.atan(1.0):',math.atan(1.0))                   # 反正切函数
 print('math.degrees(math.pi / 4):',math.degrees(math.pi / 4)) # 弧度化角度
 print('math.radians(180.0):',math.radians(180.0))             # 角度化弧度
 
+

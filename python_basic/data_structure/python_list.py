@@ -111,3 +111,9 @@ data = [1,2,3]
 print(data)
 data.insert(0,4)
 print(data)
+
+data.reverse()
+print('after reverse:',data)
+data.append(5)
+data.reverse()
+print(data)
