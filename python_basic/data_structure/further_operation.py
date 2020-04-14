@@ -14,7 +14,7 @@ b = [j+1 for j in range(1, 5)]
 print("b=", b)
 c = [n for n in range(1, 10) if n % 2 == 0]
 print("c=", c)
-d = [letter.lower() for letter in 'ABCDEFGHIGKLMN']
+d = [letter.lower() for letter in 'ABCDEFG']
 print("d=", d)
 e = {i: i + 1 for i in range(4)}
 print("e=", e)
