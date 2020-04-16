@@ -8,4 +8,4 @@ print(eval('2+3*4'))
 # For example,we can generate a string containing Python code
 # at runtime and then execute these statements using the exec statement.
 # A simple example is shown below.
-exec("print('Hello Exec...')")
+exec("print(2+3*4)")

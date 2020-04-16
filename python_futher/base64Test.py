@@ -1,6 +1,6 @@
 import base64
 
-image = 'image/zqq.jpg'
+image = 'image/im.png'
 with open(image, 'rb') as f:
     image = f.read()
     print(image)

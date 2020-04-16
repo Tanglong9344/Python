@@ -13,9 +13,8 @@
 # 将DEFAULT_CHARSET的默认值'latin1',改成utf8
 
 import pymysql
-
 # Open connection to database test
-db = pymysql.connect("localhost","root","12345678","test")
+db = pymysql.connect("localhost","root","password","test")
 # Prepare a cursor object using cursor() method
 cursor = db.cursor()
 # Execute SQL query using execute() method.
@@ -24,7 +23,7 @@ cursor.execute("SELECT VERSION()")
 data = cursor.fetchone()
 print ("Database version : %s " % data)
 
-cursor.execute("SELECT * from mysql_test")
+cursor.execute("SELECT * from user")
 # print results
 data = cursor.fetchone()
 while(data):
@@ -47,7 +46,7 @@ except:
    db.rollback()
 
 try:
-    cursor.execute("SELECT * from mysql_test")
+    cursor.execute("SELECT * from user")
     # print results
     data = cursor.fetchall()
     for row in data:

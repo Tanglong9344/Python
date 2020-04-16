@@ -1,4 +1,3 @@
-# SMTP-send message using 'mail.qq.com'
 from email.mime.text import MIMEText
 from email.header import Header
 from smtplib import SMTP_SSL

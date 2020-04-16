@@ -1,13 +1,7 @@
-#  SMTP-send message with accessories using 'mail.qq.com'
-import smtplib
-from email.mime.text import MIMEText
-from email.header import Header
 from smtplib import SMTP_SSL
-
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
-
 from email.mime.image import MIMEImage
 
 # qq邮箱smtp服务器

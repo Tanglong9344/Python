@@ -1,4 +1,3 @@
-# python thread
 import _thread
 import time
 

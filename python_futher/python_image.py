@@ -1,9 +1,6 @@
-# python Image module
-# url: http://www.pythonware.com/products/pil/
-from PIL import Image, ImageDraw
+from PIL import Image
 
 print("Modes:", Image.MODES)
-print("Version:", Image.VERSION)
 
 # open a image
 im = Image.open('image/im.png')

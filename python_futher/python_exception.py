@@ -1,5 +1,3 @@
-# python Exception
-
 # assert
 a = 5
 assert a>3
@@ -13,9 +11,8 @@ try:
 except:
     print ('File not find...')
 finally:
-    print("Done.")
+    print("Done")
 
-# try-except Exception
 a = 3
 b = 0
 try:

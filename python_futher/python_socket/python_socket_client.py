@@ -1,4 +1,3 @@
-# python socket client
 import socket
 
 # create a socket

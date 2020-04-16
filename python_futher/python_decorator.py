@@ -1,4 +1,3 @@
-# python decorator
 # Everything in python is object
 # meta-programming
 
@@ -44,22 +43,22 @@ def fun_new(fun):
     def decorator():
         fun()
         print("After decorator...")
-    # return new function
     return decorator
 
-# decorator--1
 # before
+print('------old------')
 fun_old()
 # decorator
 fun_old = fun_new(fun_old)
 #after
+print('------new------')
 fun_old()
 
-# decorator--2
 @fun_new     # (@ + decorator function)
 def fun_old():
     print("Before decorated...")
 #after
+print('------new------')
 fun_old()
 
 # decorator parameter-if divided by zero ,will return None
@@ -67,7 +66,7 @@ def smart_divide(func):
    def inner(a,b):
       if b == 0:
          print("Can't divided by 0...")
-         return
+         return None
       return func(a,b)
    return inner
 
@@ -75,6 +74,7 @@ def smart_divide(func):
 def divide(a,b):
     return a/b
 
+print('---------smart division-------------')
 print(divide(3,0))
 
 
@@ -93,18 +93,16 @@ def percent(func):
         print("%" * n)
     return inner
 
-# decorate --1
 @star
 @percent
 def printer(n):
     pass
 
-printer(66)
+printer(10)
 
-print("\n")
-# decorate --2
+print()
+
 def printer2(n):
     pass
-printer2=star(percent(printer2))
-printer2(66)
-
+printer3=star(percent(printer2))
+printer3(10)

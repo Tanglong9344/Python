@@ -1,4 +1,3 @@
-# python socket server
 import socket
 
 # create a socket
