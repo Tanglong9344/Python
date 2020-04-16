@@ -5,4 +5,4 @@ config.read('config.conf')
 name = config.get("param", "name")
 age = config.getint("param", "age")
 
-print('name:%s,age:%d'%(name,age))
+print('name:%s,age:%d'%(name,18+age))

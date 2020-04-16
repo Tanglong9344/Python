@@ -3,9 +3,10 @@
 # E5%AE%9E%E7%8E%B0%E7%99%BE%E5%BA%A6%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8B%E8%BD%BD.md
 
 import re
-import requests
-from urllib.parse import *
+from os import mkdir
+from os.path import isdir
 
+import requests
 
 def download_pic(html, keyword):
     pic_url = re.findall('"objURL":"(.*?)",', html, re.S)
@@ -15,16 +16,17 @@ def download_pic(html, keyword):
         print('Downloading the ' + str(i) + ' piece of picture，URL:' + str(each))
         try:
             pic = requests.get(each, timeout=10)
-        except requests.exceptions.ConnectionError:
-            print('Something wrong hanppened!')
+        except requests.exceptions.ConnectionError as e:
+            print('Something wrong hanppened:',e)
             continue
-
-        dest_dir = 'images/' + keyword + '_' + str(i) + '.jpg'
+        dir = 'images'
+        if not isdir(dir):
+            mkdir(dir)
+        dest_dir = dir + '\\' +keyword + '_' + str(i) + '.jpg'
         fp = open(dest_dir, 'wb')
         fp.write(pic.content)
         fp.close()
         i += 1
-
 
 if __name__ == '__main__':
     word = input("Input key word: ")

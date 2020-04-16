@@ -1,11 +1,10 @@
-# 获取可用的代理服务器IP
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from urllib.error import HTTPError
 import re
 
 
-def gethtml(url):
+def getDataList(url):
     try:
         html = urlopen(url)
     except HTTPError as e:
@@ -20,14 +19,14 @@ def gethtml(url):
     return labellist
 
 
-def getdict(html):
+def getdict(dataList):
     regip = re.compile('[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
-    regp = re.compile('\d{1,4}\d$')
+    regport = re.compile('\d{1,4}\d$')
     dict = {}
-    for item in html:
+    for item in dataList:
         if regip.match(item.get_text()):
             key = item.get_text()
-        if regp.match(item.get_text()):
+        if regport.match(item.get_text()):
             value = item.get_text()
             dict[key] = value
     return dict
@@ -41,15 +40,15 @@ def fwrite(dict, fname):
 
 
 if __name__ == '__main__':
-    url = 'http://www.66ip.cn/'
+    url = 'http://www.66ip.cn'
     fname = 'poxy.txt'
     for page in range(1, 20):
         if page == 1:
             newurl = url + 'index.html'
         else:
             newurl = url + str(page) + '.html'
-        html = gethtml(url)
-        dict = getdict(html)
+        dataList = getDataList(url)
+        dict = getdict(dataList)
         fwrite(dict, fname)
-        print(u'完成第' + newurl + u'页')
-    print(u'写入成功')
+        print('完成第' + newurl + '页')
+    print('写入成功')

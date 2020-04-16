@@ -1,15 +1,10 @@
-# 进度条
 import sys
 import time
-
-# print progress of a point
-
 
 def bar(num, total):
     r = '\r[%s%s]%d%%' % ("=" * num, " "*(total-num), num, )
     sys.stdout.write(r)
     sys.stdout.flush()
-
 
 N = 100
 TIME = 0.1
