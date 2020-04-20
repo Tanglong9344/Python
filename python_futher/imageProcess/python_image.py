@@ -3,7 +3,7 @@ from PIL import Image
 print("Modes:", Image.MODES)
 
 # open a image
-im = Image.open('image/im.png')
+im = Image.open('../image/im.png')
 
 # show information of a image
 print(" im.format:%s\n im.size:%s\n im.mode:%s\n" % (im.format, im.size, im.mode))
