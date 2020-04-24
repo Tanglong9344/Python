@@ -19,7 +19,8 @@ with open(filePath, 'rb') as f:
     }
     files = {'file': ('test.pdf', open(filePath, 'rb'))}
     try:
-        response = requests.request('POST',url=upload_url, files=files,data=form_data,headers=headers)
+        response = requests.post(url=upload_url, files=files,data=form_data,headers=headers)
+        response = requests.request('POST',url=upload_url, files=files, data=form_data, headers=headers)
         print("response:", response.json())
         response.close()
     except Exception as e:
