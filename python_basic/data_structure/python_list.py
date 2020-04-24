@@ -1,4 +1,5 @@
 # list:有序，可变
+import math
 from random import choice
 #number
 myList = range(1, 10)
@@ -117,3 +118,15 @@ print('after reverse:',data)
 data.append(5)
 data.reverse()
 print(data)
+
+# 取整
+print(round(0.1))
+print(math.ceil(0.1))
+
+list1 = [1]
+list2 = list1
+print(list1)
+print(list2)
+list1=[2,1]
+print(list1)
+print(list2)

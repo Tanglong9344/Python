@@ -7,7 +7,6 @@ filePath = 'E:\\pythonProject\\paperCheck\\test.pdf'
 with open(filePath, 'rb') as f:
     files = {'file': ('test.pdf', open(filePath, 'rb'))}
     try:
-        print('xxxxxxx')
         response = requests.post(url=upload_url, files=files)
         print("response:", response.json())
         response.close()
