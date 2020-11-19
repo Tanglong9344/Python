@@ -24,7 +24,7 @@ def Get_data():
     save_text(articles)
 
 def save_text(articles):
-    db = pymysql.connect("localhost", "xx", "xx", "xx")
+    db = pymysql.connect("localhost", "root", "password", "tl")
     cursor = db.cursor()
     for i in range(len(articles)):
         print("xx:",i+1)
